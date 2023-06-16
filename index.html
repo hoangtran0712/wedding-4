@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bảo Lâm &amp; Việt Trinh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="Shortcut icon" href="http://stuart.tungtadaa.com/wp-content/themes/TT-DI/assets/TT-Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+
+<body>
+    <div
+        style="background-image: url(img/15.jpg); padding-left: 10%; padding-right: 10%;background-attachment: fixed;background-position-y: -40px;background-size: cover;">
+        <div class="header container-fluid">
+            <div class="row align-items-center">
+                <div class="logo col-3 col-lg-2">
+                    <img src="img/Logo-01.png">
+                </div>
+                <div class="line col-6 col-lg-8"></div>
+
+                <div class="col-3 col-lg-2 text-right">
+                    <h3>Digital Invitation</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome container-fluid">
+            <div class="row align-center">
+                <div class="video-container col-10 col-lg-5">
+                    <div id="video-container">
+                        <!-- Video -->
+                        <video autoplay="" muted="" loop="" playsinline="" id="video">
+                            <source src="video/Video-wedding-off.mp4" type="video/mp4">
+                        </video>
+                        <!-- Video Controls -->
+                        <div id="video-controls">
+                            <button type="button" id="play-pause"><span
+                                    class="material-symbols-outlined">pause</span></button>
+                            <input type="range" id="seek-bar" value="0">
+                            <button type="button" id="mute"><span
+                                    class="material-symbols-outlined">volume_up</span></button>
+                            <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="0.5">
+                            <button type="button" id="full-screen"><span
+                                    class="material-symbols-outlined">fullscreen</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5 text-center align-self-center align-center">
+                    <h1><img src="http://stuart.tungtadaa.com/wp-content/themes/TT-DI/assets/YoureInvited.svg"
+                            style="padding-left: 40px;"></h1>
+                    <p>SAVE THE DATE | <span class="day-welcome">15.04.2023</span></p>
+                </div>
+
+                <div class="countdown col-12 col-lg-2">
+                    <div class="digi" id="days"></div>
+                    <div class="label" id="days-label"></div>
+                    <div class="digi" id="hours"></div>
+                    <div class="label" id="hours-label"></div>
+                    <div class="digi" id="minutes"></div>
+                    <div class="label" id="minutes-label"></div>
+                    <div class="digi" id="seconds"></div>
+                    <div class="label" id="seconds-label"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="invitation container-fluid">
+            <div class="row align-center">
+                <div class="col-12 text-center">
+                    <h2 style="font-size:50px!important">Dear friends,</h2>
+                    <i class="sizee">Hope that you can join us under a waxing crecent moon to congratulate us on</i>
+                    <p class="hope">becoming husband and wife</p>
+                </div>
+
+                <div class="col-10 col-lg-6 text-right time">
+                    <p>On Saturday 15th, April 2023</p>
+
+                </div>
+                <div class="col-10 col-lg-6 venue">
+                    <p>at Co La Cafe</p>
+                    <p>Tam Dao, Vinh Phuc</p>
+                    <a class="google-map"
+                        href=" https://www.google.com/maps/place/Ti%E1%BB%87m+Cafe+C%E1%BB%8F+L%E1%BA%A1/@21.4536603,105.6411064,15z/data=!4m6!3m5!1s0x3134e7c4e356e425:0x3f452ce8729d2368!8m2!3d21.4536603!4d105.6411064!16s%2Fg%2F11jcjb9pmv">
+                        (Google Map)</a>
+                </div>
+
+                <div class="col-12 text-center">
+                    <p class="word-spacing"><i>Dresscode</i>
+                        <img src="img/DC.png" class="dcimage" style="padding-left: 140px;">
+                    </p><br>
+                </div>
+
+                <div class="col-12 text-center">
+                    <i class="sizee">Your dearest Groom &amp; Bride to be</i><br>
+                    <i class="sizee">Love, Bao Lam &amp; Viet Trinh.</i>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="timeline container-fluid">
+            <div class="row align-items-center">
+                <div class="col-5 col-sm-3 col-md-3 col-lg-2">
+                    <h2>Timeline</h2>
+                </div>
+
+                <div class="col-7 col-sm-9 col-md-9 col-lg-10">
+                    <div class="line"></div>
+                </div>
+            </div>
+
+
+            <div class="raw margin-vehicle" style="padding-right: 30px;">
+                <div class="item">
+                    <img src="img/huge.png" class="image">
+                    <p class="title">Waxing Crescent</p>
+                    <div class="time-raw">
+                        <p class="time-line"><i>1:30</i></p>
+                        <p class="time-AMPM"><i>PM</i></p>
+                    </div>
+                    <img src="img/bus.png" class="image">
+                </div>
+                <div class="item">
+                    <img src="img/huge-1.png" class="image">
+                    <p class="title">First Quarter</p>
+                    <div class="time-raw">
+                        <p class="time-line"><i>3:30</i></p>
+                        <p class="time-AMPM"><i>PM</i></p>
+                    </div>
+                    <img src="img/cocktail.png" class="image">
+                </div>
+                <div class="item">
+                    <img src="img/huge-2.png" class="image">
+
+                    <p class="title">Full Moon</p>
+                    <div class="time-raw">
+                        <p class="time-line"><i>4:00</i></p>
+                        <p class="time-AMPM"><i>PM</i></p>
+                    </div>
+                    <img src="img/ring.png" class="image">
+                </div>
+                <div class="item">
+                    <img src="img/huge-3.png" class="image">
+
+                    <p class="title">Third Quarter</p>
+                    <div class="time-raw">
+                        <p class="time-line"><i>6:00</i></p>
+                        <p class="time-AMPM"><i>PM</i></p>
+                    </div>
+                    <img src="img/restaurant.png" class="image">
+                </div>
+                <div class="item">
+                    <img src="img/huge-4.png" class="image">
+
+                    <p class="title">Waning Crescent</p>
+                    <div class="time-raw">
+                        <p class="time-line"><i>7:00</i></p>
+                        <p class="time-AMPM"><i>PM</i></p>
+                    </div>
+                    <img src="img/dancing.png" class="image">
+                </div>
+                <div class="item">
+                    <img src="img/huge-5.png" class="image">
+
+                    <p class="title">New Moon</p>
+                    <div class="time-raw">
+                        <p class="time-line"><i>8:00</i></p>
+                        <p class="time-AMPM"><i>PM</i></p>
+                    </div>
+                    <img src="img/moon.png" class="image">
+                </div>
+            </div>
+        </div>
+
+        <div class=" container-fluid">
+            <div class="row align-items-center text-center">
+                <i>
+                    <h1 style="display: inline; padding-left: 20px;">Just like the stars, we will guide you home</h1>
+                </i>
+            </div>
+            <div class="row mt-5">
+                <div class="margin-vehicle col-md-6" style="padding-right: 50px;">
+                    <p><b>Transport</b></p>
+                    <div class="item-horizontal">
+                        <img src="img/car.png" class="image-left margin-right">
+                        <p><b>Personal Cars</b> have been arranged to be parked at Parking area (5-min walk – next to
+                            Venus Hotel)
+                            for your safety and convenience. Please pick up free ticket at Co La’s entrance. We are
+                            ready to
+                            take you back to the wedding venue.</p>
+                    </div>
+                    <div class="item-horizontal">
+                        <img src="img/bus.png" class="image-left margin-right">
+                        <div>
+                            <p><b>Buses</b> have been organised to transport guests to and from Tam Dao. If you require
+                                this
+                                bus service, please register in advance as follows:</p>
+                            <p><b>*Ha Noi – Tam Dao</b></p>
+                            <p> - Route 1: <b>01:00 PM</b> – Thong Nhat Park (Gate: Tran Nhan Tong str. – Hai Ba Trung
+                                dist.)</p>
+                            <p> - Route 2: <b>01:00 PM</b> – Quan Ngua Sport Palace ( 30 Van Cao str - Ba Dinh dist.)
+                            </p>
+                            <p><b>*Tam Dao – Hanoi</b></p>
+                            <p> - Route 1: <b>08:00 PM</b> – Thong Nhat Park (Gate: Tran Nhan Tong str. – Hai Ba Trung
+                                dist.)</p>
+                            <p> - Route 2: <b>08:30 PM</b> – Quan Ngua Sport Palace (30 Van Cao str. - Ba Dinh dist.)
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="margin-vehicle col-md-6" style="padding-left: 20px;">
+                    <p><b>Children</b></p>
+                    <div class="item-horizontal">
+                        <img src="img/baby-boy.png" class="image-left margin-right">
+                        <p>While we’d love to watch your children run and play, we’ve decided to make our wedding an
+                            adults-only kind of day. We hope this advanced notice means you can celebrate with us,
+                            childfree!</p>
+                    </div>
+                    <p><b>High-heel shoes</b></p>
+                    <div class="item-horizontal">
+                        <img src="img/high-heels.png" class="image-left margin-right">
+                        <p>For your safety, we suggest that you use flat heels instead of pointed heels. The floor plan
+                            of the
+                            party venue is wooden with many slots that can be dangerous and inconvenient for you. Wish
+                            you
+                            sympathize.</p>
+                    </div>
+                    <p><b>Weather</b></p>
+                    <div class="item-horizontal">
+                        <img src="img/clear-sky.png" class="image-left margin-right">
+                        <p>It might be getting cool when it comes darker, please bring along the coat or scarf to avoid
+                            catching a cold.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="rsvp container-fluid">
+            <div class="row align-items-center">
+                <div class="col-7 col-sm-5 col-md-4 col-lg-3 col-xl-2">
+                    <h2>Be our guest</h2>
+                </div>
+
+                <div class="col-5 col-sm-7 col-md-8 col-lg-9 col-xl-10">
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="row align-center">
+                <div class="col-10 col-lg-6 text">
+                    <p class="p-foot">-RSVP-</p>
+                    <p class="p-foot-p">by 6th April</p>
+                </div>
+
+                <div class="col-10 col-lg-6 form">
+
+                    <form>
+                        <label class="bold">Contact us</label>
+                        <p class="mb-4 Contact-footer"><span style="font-weight: bold;">Tran To Uyen (The Bride's Mother)
+                                :</span> <a href="tel:+84 903 296 456"> +84 903 296 456 </a><br><span
+                                style="font-weight: bold">Le Viet Trinh (The Bride) :</span> <a
+                                href="tel:+84 969 150 495">+84 969 150 495</a><br><span style="font-weight: bold">Phi
+                                Bao Lam (The Groom) :</span> <a href="tel:+84 944 456 555">+84 944 456 555</a></p>
+                        <label class="bold">Will you be joining us?</label>
+                        <div style="display: flex; margin-top: 16px;">
+                            <a href="index2.html" target="text" class="theme-btn mx-2">
+                                <button type="button" style="padding-left: 32px;
+                                    padding-right: 32px;
+                                    padding-top: 8px;
+                                    padding-bottom: 8px;
+                                     background-color: rgb(0, 0, 0);border-radius: 12px;">Yes</button></a>
+                            <a href="index3.html" target="text" class="theme-btn mx-2">
+                                <button type="button" style="padding-left: 32px;
+                                padding-right: 32px;
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                 background-color: rgb(0, 0, 0);border-radius: 12px;">No</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="http://stuart.tungtadaa.com/wp-content/themes/TT-DI/script.js"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 15, 2023 15:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("days-label").innerHTML = "days";
+            // document.getElementById("twopoints-1").innerHTML = ":";
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("hours-label").innerHTML = "hours";
+            // document.getElementById("twopoints-2").innerHTML = ":";
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("minutes-label").innerHTML = "minutes";
+            // document.getElementById("twopoints-3").innerHTML = ":";
+            document.getElementById("seconds").innerHTML = seconds;
+            document.getElementById("seconds-label").innerHTML = "seconds";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

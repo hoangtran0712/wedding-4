@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiền</title>
+    <style>
+        .raw {
+            justify-content: space-evenly;
+            font-style: italic;
+            display: flex;
+
+        }
+
+        body {
+            background-image: url(img/15.jpg)
+        }
+
+        input[type=text] {
+            background-color: transparent;
+            border: none;
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+        }
+
+        button {
+            padding: 8px 20px;
+            border-radius: 8px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="raw">
+        <div class="item">
+            <img src="img/code3.jpg " class="image"
+                style="width: 300px; height: 550px;padding: 15px;border-radius: 10px; box-shadow: 2px 3px 8px #acacac;background-color: white;">
+            <div class="time-raw">
+                <h2 class="time-line"><i>Account Name: Le Viet Trinh</i></h2>
+                <h2 class="time-line"><i>Bank: Techcombank</i></h2>
+                <h2 class="time-line"><i>Bank Account No.: 8086000688</i></h2>
+                <input type="text" class="time-AMPM" value="8086000688" id="myInput" disabled><button
+                    onclick="myFunction()">Copy</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            // Get the text field
+            var copyText = document.getElementById("myInput");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            alert("Copied the text: " + copyText.value);
+        }
+    </script>
+
+</body>
+
+</html>

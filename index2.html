@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+  
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      
+    }
+
+    #container {
+      height: 100%;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Playfair Display', serif;
+      background-image: url(img/15.jpg)
+    }
+
+    h1,
+    label {
+      color: black;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      width: 100%;
+      resize: vertical;
+      padding: 15px;
+      border-radius: 40px;
+      border: 1px solid #212953;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+      outline: none;
+    }
+
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    button {
+      background-color: #000000;
+      color: white;
+      padding: 14px 0px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      text-align: center;
+
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+
+    .signupbtn {
+      width: 100%;
+      border-radius: 15px;
+      border: 0;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      padding: 42px;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    #snow {
+      padding: 15px;
+      width: 100%;
+    }
+  </style>
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <form>
+      <form action="">
+        <div class="container">
+          <h1 style="font-size: 60px;">Registration For Wedding</h1>
+          <p style="font-size: 23px;">Please fill in the form below</p>
+          <hr>
+          <label for="fname" style="font-size: 23px;" ><b>Full Name</b></label><br>
+          <input type="text" id="fname" name="fname" style ="font-style: italic" placeholder="Type your name here..."><br>
+          <label for="email" style="font-size: 23px;"><b>Phone Number</b></label>
+          <input type="text" placeholder="Type your phone number here..." name="phone" style ="font-style: italic" required>
+          <label for="email" style="font-size: 23px;"><b>Email</b></label> 
+          <input type="text" placeholder="Type your email here..." name="email" style ="font-style: italic" required>
+          
+          <label for="email" style="font-size: 23px;"><b>Accompany with</b></label>
+          <input type="text" placeholder=" Type his / her full name here..." name="phone" style ="font-style: italic" required>
+          <label for="snow" style="font-size: 23px;"><b>Transportation</b></label>
+          <select id="snow" style="border-radius: 40px;">
+            <option value="opt1" style ="font-style: italic">Route 1: 01:00 PM – Thong Nhat Park (Gate: Tran Nhan Tong str. – Hai Ba Trung dist.)</option>
+            <option value="opt2" style ="font-style: italic">Route 2: 01:30 PM – Quan Ngua Sport Palace (30 Van Cao str. - Ba Dinh dist.)</option>
+            <option value="opt3" style ="font-style: italic">Your Personal Car</option>
+          </select>
+          <button type="submit" class="signupbtn" style ="font-size: 18px; margin-top:40px; border-radius: 40px;   width: 20%;">Register Now</button>
+        </div>
+  </div>
+  </form>
+</body>
+
+</html>

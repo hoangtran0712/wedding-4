@@ -1,0 +1,827 @@
+/*
+	Theme Name: TT-DI
+	Theme URI: https://stuart.tungtadaa.com
+	Author: TD
+	Author URI: https://tungtadaa.com
+	Description: TD & Stuart's Digital Invitation
+	Requires at least: 6.1
+	Tested up to: 6.1
+	Version: 1.0
+	Text Domain: TD & Stuart
+	Tags: TD & Stuart, Digital Invitation
+*/
+
+/* UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* body {
+    background-image: url(img/3.jpg);
+} */
+
+@font-face {
+    font-family: 'Zapfino' sans-serif;
+    src: url('font/ZapfinoExtraLT-One.otf') format('opentype');
+    src: url('font/ZapfinoExtraLPro.otf') format('opentype');
+    src: url('font/ZapfinoExtraLT-Two.otf') format('opentype');
+    src: url('font/ZapfinoForteLTPro.otf') format('opentype');
+    font-family: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 400;
+    src: url('fonts/SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 800;
+    src: url('fonts/SF-Pro-Text-Heavy.otf');
+}
+
+@font-face {
+    font-family: 'Bon Foyage', serif;
+    font-weight: 400;
+    src: url('fonts/Bon-Foyage.otf') format('opentype');
+    src: url('fonts/Bon-Foyage.eot') format('embedded-opentype');
+    src: url('fonts/Bon-Foyage.woff2') format('woff2');
+    src: url('fonts/Bon-Foyage.woff') format('woff');
+    src: url('fonts/Bon-Foyage.ttf') format('truetype');
+    src: url('fonts/Bon-Foyage.svg') format('svg');
+}
+
+:root {
+    --primary-font: 'Playfair Display', serif;
+    --secondary-font: 'SF Pro Text', sans-serif;
+    --theme-font: 'Bon Foyage', serif;
+    --primary-color: black;
+    --secondary-color: #aaa;
+}
+
+.line {
+    border-bottom: 1px solid;
+    height: 0;
+}
+
+
+.align-center {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* HEADER */
+/* .dcimage {
+
+} */
+
+.logo img {
+    width: 130px;
+}
+
+h1 {
+    width: 90%;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    font-weight: 400 !important;
+    font-size: 30px !important;
+}
+
+h3 {
+    font-family: var(--primary-font);
+    font-weight: 400 !important;
+    font-size: 20px !important;
+}
+
+p,
+i {
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 !important;
+}
+
+b {
+    font-family: var(--primary-font);
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    text-transform: uppercase
+}
+
+.text-right {
+    text-align: right;
+}
+
+.word-spacing {
+    word-spacing: 3px;
+}
+
+/* WELCOME */
+.video-container {
+    position: relative;
+    /* height: 80vh; */
+    padding: 40px 0 0 40px !important;
+}
+
+.video-container .dtnmt {
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    right: 50px;
+    rotate: -2deg;
+}
+
+.video-container #video-container {
+    height: 50vw;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    rotate: -2deg;
+}
+
+.video-container #video-container video {
+    height: 106.1%;
+}
+
+#video-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    opacity: 0;
+    transition: opacity .3s;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    justify-content: space-between;
+    align-items: center;
+}
+
+#video-container:hover #video-controls {
+    opacity: 0.9;
+}
+
+button {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#seek-bar {
+    border: 0 !important;
+    outline: 0 !important;
+    height: 8px !important;
+    border-radius: 4px !important;
+}
+
+#volume-bar {
+    width: 20%;
+    border: 0 !important;
+    outline: 0 !important;
+    height: 8px !important;
+    border-radius: 4px !important;
+}
+
+.welcome p {
+    word-spacing: 3px;
+}
+
+.day-welcome {
+    font-style: italic;
+    font-size: 25px;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 105px !important;
+}
+
+.countdown .digi {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 150px;
+    color: var(--primary-color);
+}
+
+.countdown .label {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--secondary-color);
+}
+
+.countdown .twopoints {
+    display: none;
+}
+
+
+/* FIX 17 */
+
+.sizee {
+    font-size: 23px;
+}
+.sizee-1 {
+    font-size: 40px;
+}
+
+.font-h1 {
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+.hope {
+    font-size: 23px;
+    font-style: italic;
+}
+
+.google-map {
+    font-size: 20px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+
+}
+/* ////////// */
+
+
+
+
+/* INVITATION */
+.invitation {
+    padding: 100px !important;
+    position: relative;
+}
+
+.time {
+    margin: 50px 0 !important;
+    padding: 0 50px !important;
+    border-right: 0.5px solid #000;
+}
+
+.venue {
+    margin: 50px 0 !important;
+    padding: 0 50px !important;
+}
+
+.invitation img {
+    width: 50vw;
+    position: relative;
+    bottom: -15px;
+    right: 70px;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-left: 10%;
+
+}
+
+/* TIMELINE */
+.raw {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.margin-vehicle{
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    padding-left: 32px;
+}
+
+.item {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 22px;
+    color: #000;
+    margin-top: 16px;
+    padding-top: 20px;
+}
+
+.time-raw {
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.time-line {
+    font-size: 16px;
+    color: #000;
+    margin-right: 8px;
+    padding-top: 20px;
+}
+
+.time-AMPM {
+    font-size: 16px;
+    color: #000;
+    padding-top: 20px;
+}
+
+/* Just like the stars, we will guide you home */
+.item-horizontal{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    
+}
+
+
+.image-left {
+    width: 50px;
+    height: 50px;
+}
+
+.margin-right{
+    margin-right: 24px;
+}
+
+/* Star */
+.item-horizontal {
+    display: flex;
+    margin-top: 16px;
+}
+
+.image-left {
+    width: 50px;
+    height: 50px;
+    max-width: 100%;
+}
+
+.margin-right {
+    margin-right: 24px;
+}
+
+/* RSVP */
+.rsvp .text {
+    margin: 100px 0 80px 0 !important;
+    padding: 0 50px 0 150px !important;
+}
+
+.rsvp .form {
+    margin: 85px 0 80px 0 !important;
+    padding: 0 120px 0 50px !important;
+}
+
+.rsvp form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label.bold {
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+}
+
+form input[type="text"] {
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #000;
+    border-left: 0;
+    border-radius: 0 !important;
+    padding: 0 0 15px 0;
+    margin: 0 0 30px 30px !important;
+    background-color: transparent;
+    font-family: var(--primary-font) !important;
+    font-weight: 400;
+    font-size: 22px !important;
+    width: 70%;
+}
+
+form input::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 22px;
+}
+
+form input:focus-visible {
+    outline: 0 !important;
+}
+
+form input[type="radio"] {
+    margin: 0 30px 0 0 !important;
+    padding: 0 !important;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+form input[type="radio"]:checked {
+    background-color: #000;
+}
+
+form label.left {
+    margin: 0 65px 0 0;
+}
+
+form input[type="submit"] {
+    padding: 15px 30px;
+    margin: 30px 0 0 0 !important;
+    border-radius: 0 !important;
+    border: 0;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--secondary-font) !important;
+    font-size: 15px !important;
+    letter-spacing: 2px;
+}
+
+/* .wpcf7-not-valid-tip {
+	font-family: var(--primary-font);
+	font-size: 18px;
+	font-style: italic;
+	display: block;
+}
+.screen-reader-response, .wpcf7-response-output {
+	display: none;
+} */
+
+/* FOOTER */
+.p-foot {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.p-foot-p {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+
+.footer span {
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    opacity: 0.3;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 991px),
+(-webkit-device-pixel-ratio: 3) {
+    body {
+        background-image: url("assets/Wave-Pattern.png");
+        background-size: 500px 504px;
+        margin: 20px !important;
+    }
+
+    .header {
+        padding: 0 10px !important;
+    }
+
+    .logo img {
+        width: 100px;
+        margin: 0 -5px;
+    }
+
+    h1 {
+        margin: 35px auto 5px auto !important;
+        width: 70%;
+    }
+
+    h3,
+    p,
+    i {
+        font-size: 15px !important;
+    }
+
+    b,
+    form label {
+        font-size: 22px !important;
+    }
+
+    .video-container {
+        /* height: 80vh; */
+        padding: 0 !important;
+        margin: 75px 0 0 0;
+    }
+
+    .video-container .dtnmt {
+        width: 90%;
+        bottom: 50px;
+        right: -15px;
+    }
+
+    .video-container #video-container {
+        height: 680px;
+        width: 312px;
+    }
+
+    .video-container #video-container video {
+        height: 86.1%;
+    }
+
+    .countdown {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .countdown .digi {
+        font-size: 50px;
+        line-height: 50px;
+        margin: 0 5px
+    }
+
+    .countdown .twopoints {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0 5px
+    }
+
+    .countdown .label {
+        display: none;
+    }
+
+    .countdown .twopoints {
+        display: block;
+        color: var(--secondary-color);
+    }
+
+    .countdown,
+    .invitation,
+    .timeline,
+    .rsvp,
+    .footer {
+        padding: 10px !important;
+        margin: 70px 0 0 0 !important;
+    }
+
+    .time {
+        padding: 0 0 30px 0 !important;
+        margin: 30px 0 !important;
+        text-align: center;
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+
+    .venue {
+        padding: 0 !important;
+        margin: 0 0 30px 0 !important;
+        text-align: center;
+    }
+
+    .invitation img {
+        width: 300px;
+        margin: 30px 0 0 0 !important;
+        position: relative;
+        bottom: 0;
+        right: 30;
+    }
+
+
+    .timeline img {
+        width: 95px;
+        object-fit: contain;
+
+    }
+
+    .rsvp .text {
+        padding: 0 !important;
+        margin: 50px 0 0 0 !important;
+        text-align: center;
+    }
+
+    .rsvp .form {
+        padding: 0 !important;
+        margin: 50px 0 0 0 !important;
+    }
+
+    .rsvp form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form label {
+        margin: 0 !important;
+        font-size: 15px !important;
+    }
+
+    form label.bold {
+        font-size: 22px !important;
+        width: auto;
+    }
+
+    form p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form input[type="text"] {
+        padding: 0 0 10px 0;
+        margin: 0 0 30px 20px !important;
+        font-size: 15px !important;
+        width: 65%;
+    }
+
+    form input::placeholder {
+        font-size: 15px;
+    }
+
+    /* 	form span.wpcf7-list-item-label {
+		margin: 0!important;
+	}
+	form span.wpcf7-radio {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	} */
+    form input[type="submit"] {
+        padding: 12px 25px;
+        margin: 30px 0 0 0 !important;
+        font-size: 13px !important;
+        letter-spacing: 2px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer span {
+        font-size: 12px;
+    }
+    .Contact-footer{
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 575px) {
+
+
+    .video-container #video-container {
+        height: 600px;
+        width: 275px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    h1 {
+        margin: 0 auto 30px auto !important;
+        width: 70%;
+    }
+
+    .video-container {
+        /* height: 95vh; */
+        padding: 0 !important;
+        margin: 85px 0 0 0;
+    }
+
+    .video-container #video-container {
+        height: 1000px;
+        width: 459px;
+        margin: auto;
+    }
+
+    .video-container .dtnmt {
+        width: 70%;
+        bottom: 70px;
+        right: -10px;
+    }
+}
+
+/* TABLET */
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .video-container {
+        /* height: 85vh; */
+        padding: 40px 0 0 40px !important;
+    }
+
+    .video-container .dtnmt {
+        bottom: -30px;
+        right: -40px;
+        width: 80%;
+    }
+
+    h1 {
+        width: 80%;
+    }
+
+    .countdown {
+        padding-left: 80px !important;
+    }
+
+    .countdown .digi {
+        font-size: 80px;
+        line-height: 130px;
+    }
+
+    .countdown .label {
+        font-size: 13px;
+    }
+
+    .day-1 {
+        padding: 0 50px 0 50px !important;
+    }
+
+    .day-2 {
+        padding: 0 50px 0 50px !important;
+    }
+
+    .rsvp .text {
+        padding: 0 50px 0 50px !important;
+    }
+
+    .rsvp .form {
+        padding: 0 50px 0 50px !important;
+    }
+
+    form input[type="text"] {
+        width: 70%;
+        margin: 0 0 30px 30px !important;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+    .video-container {
+        /* height: 80vh; */
+        padding: 40px 0 0 40px !important;
+    }
+
+    .video-container .dtnmt {
+        bottom: -50px;
+        right: -10px;
+        width: 80%;
+    }
+
+    .countdown .digi {
+        font-size: 90px;
+        line-height: 150px;
+    }
+
+    .day-1 {
+        padding: 0 50px 0 100px !important;
+    }
+
+    .day-2 {
+        padding: 0 100px 0 50px !important;
+    }
+
+    .rsvp .text {
+        padding: 0 50px 0 100px !important;
+    }
+
+    .rsvp .form {
+        padding: 0 0 0 40px !important;
+    }
+}
+a{
+    color:#000000!important;
+    text-decoration: none!important;
+}
